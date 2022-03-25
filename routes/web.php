@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Products\ProductDatatablesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,9 @@ Route::get('/', function () {
 Route::get('/products', function () {
     return view('products.list');
 });
+Route::get('/products/table', [ProductDatatablesController::class, 'index'])
+    ->name('products.index');
+
 Route::get('/products/{productId}', function ($productId) {
     return view('products.item');
 });

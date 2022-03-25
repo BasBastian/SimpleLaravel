@@ -18,11 +18,20 @@
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="p-6">
-                        <a href="{{ url('/products') }}"
-                            class="text-sm text-gray-700 dark:text-gray-500 underline"
+                        <p>
+                            <a href="{{ url('/products') }}"
+                                class="text-sm text-gray-700 dark:text-gray-500 underline"
                             >
-                            Let's check our stock products
-                        </a>
+                                Let's check our stock products (customly built table)
+                            </a>
+                        </p>
+                        <p>
+                            <a href="{{ url('/products/table') }}"
+                                class="text-sm text-gray-700 dark:text-gray-500 underline"
+                                >
+                                Let's check our stock products (with Yajra's Laravel DataTables)
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
