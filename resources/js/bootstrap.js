@@ -6,7 +6,7 @@ try {
     require('datatables.net-bs4');
     require('datatables.net-buttons-bs4');
 } catch (e) {
-    console.warn('Could not load dependency');
+    console.warn('Could not load dependency', e);
 }
 
 /**
