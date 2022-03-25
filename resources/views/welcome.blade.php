@@ -25,6 +25,8 @@
                                 Let's check our stock products (customly built table)
                             </a>
                         </p>
+                    </div>
+                    <div class="p-6">
                         <p>
                             <a href="{{ url('/products/table') }}"
                                 class="text-sm text-gray-700 dark:text-gray-500 underline"
