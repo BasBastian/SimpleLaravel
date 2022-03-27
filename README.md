@@ -13,9 +13,16 @@ but enlightening.
 Simple `winget-install.bat` script added (experimental)
 for you to easily set up this project
 
+Just remember to add path to your PHP script (C:\xampp\php) to your Environment Variable called "Path"
+
 ## Install
 
 Once you have all the dependencies installed:
+
+### PHP
+
+Composer might complain about `ext-gd` extension. To enable it, go to `C:\xampp\php` and edit `php.ini` file
+by uncommenting (remving ";" - semicolon) line like: `;extension=gd`
 
 ### Libraries
 

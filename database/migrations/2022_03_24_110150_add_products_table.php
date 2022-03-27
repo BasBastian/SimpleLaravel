@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integerf('count');
+            $table->integer('count');
             $table->string('status');
             $table->timestamps();
         });

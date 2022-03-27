@@ -25,12 +25,15 @@ REM install Vim editor - for my convenience, optional
 winget install vim.vim
 echo "Vim installed"
 
+REM install composer (php package manager)
+.\scripts\windows\refreshenv.bat
+.\scripts\windows\install-composer.bat
+.\scripts\windows\refreshenv.bat
+
 REM install NodeJS - we must be veeery specific about this one, so we'll use LinkedIn's Volta
 winget install Volta.Volta
 echo "Volta installed"
 
-REM you might've need to close the File Explorer, all terminals and reopen - WinGet has issues reloading Environment Variables
-.\scripts\windows\refreshenv.bat
 volta install node@16
 echo "NodeJS@16 installed"
 .\scripts\windows\refreshenv.bat

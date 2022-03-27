@@ -19,15 +19,20 @@
                 <a href="{{ url("/products") }}"> &LeftArrow; Back </a>
             </p>
 
-            <p>
-                <strong>Id:</strong> {{ $product->id }}
-            </p>
-            <p>
-                <strong>Name:</strong> {{ $product->name }}
-            </p>
-            <p>
-                <strong>Status:</strong> {{ $product->status }}
-            </p>
+            <table class="table bg-dark text-light">
+                <tr>
+                    <th>Id</th>
+                    <td>{{ $product->id }}</td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td>{{ $product->name }}</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>{{ $product->status }}</td>
+                </tr>
+            </table>
         </div>
 
     </div>
